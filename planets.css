@@ -1,0 +1,356 @@
+@import url("https://fonts.cdnfonts.com/css/star-wars");
+/* font-family: 'Star Wars', sans-serif; */
+@import url("https://fonts.cdnfonts.com/css/qunaden");
+/* font-family: 'Qunaden', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: #fff;
+}
+
+body {
+    background-image: url("./assets/Wallpaper\ Space\ 4K\ Iphone\ Ideas.jpg");
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img {
+    width: 45%;
+    height: auto;
+    margin-left: 200px;
+}
+
+.link-logo {
+    margin-left: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.logo-text {
+    font-family: "Star Wars", sans-serif;
+    font-size: 1.15rem;
+    transition: 0.2s;
+}
+
+.social-media {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+i {
+    font-size: 1.2rem;
+    transition: 0.2s;
+}
+
+i:hover {
+    color: gold;
+    transform: scale(1.1);
+}
+
+.logo-text:hover {
+    color: gold;
+    transform: scale(1.04);
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+}
+
+h2 {
+    font-family: "Star Wars", sans-serif;
+    margin-bottom: 20px;
+    color: gold;
+    font-weight: 300;
+}
+
+.main-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 10px;
+    padding: 0 20px;
+}
+
+.cards {
+    width: 230px;
+    height: 470px;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 5px;
+}
+
+.cards:hover {
+    transform: scale(1.02);
+}
+
+.planet-name-bg {
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.planet-name {
+    font-family: "Star Wars", sans-serif;
+    color: gold;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+.planet-name:hover {
+    color: #fff;
+}
+
+.buttons {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    width: 70px;
+    height: 25px;
+    background-color: gold;
+    color: #000;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid #000;
+    outline: none;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #000;
+    color: gold;
+    transform: scale(1.05);
+}
+
+#back-button {
+    visibility: hidden;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin: 40px 0 20px 0;
+}
+
+.footer-logo {
+    font-family: "Star Wars", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.copyright {
+    font-weight: 500;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+}
+
+.modal-content {
+    width: 25vw;
+    height: 70vh;
+    background-color: #0d0d0d;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 30px 10px;
+    align-items: center;
+}
+
+.planet-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position: 50% 10%;
+    background-size: cover;
+}
+
+.planet-details {
+    font-family: "Qunaden", sans-serif;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: gold;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+@media (max-width: 1280px) {
+    .logo {
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2 {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal-content {
+        text-align: center;
+    }
+}
+
+@media (max-width: 840px) {
+    h2 {
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        flex-direction: column;
+        padding: 10px;
+        position: relative;
+        text-align: center;
+        margin-top: 75px;
+    }
+
+    footer {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        text-align: center;
+    }
+
+    .modal-content {
+        width: 35%;
+        height: 70%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-img {
+        position: relative;
+        margin-top: 60px;
+    }
+
+    .logo {
+        flex-direction: column;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .link-logo {
+        margin-left: 25vw;
+        margin-top: 20px;
+    }
+
+    .social-media {
+        justify-content: space-between;
+        width: 150px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .modal-content {
+        width: 45vw;
+        height: 70vh;
+    }
+
+    .logo-img {
+        margin-left: 25vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-navigation {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        width: 50vw;
+    }
+
+    #baixo {
+        font-size: 30px;
+    }
+
+    .social-media {
+        display: none;
+    }
+
+    .footer-logo {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .copyright {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .modal-content {
+        width: 60vw;
+        height: 70vh;
+    }
+
+    .logo-img {
+        margin-left: 0vw;
+    }
+
+    .link-logo {
+        margin-left: 0vw;
+    }
+}
